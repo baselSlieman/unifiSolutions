@@ -3,7 +3,15 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const mongoos =require('mongoose');
+const url = "mongodb+srv://unifiuser:unifi2024@unifidb.0y81c1u.mongodb.net/unifisolutions?retryWrites=true&w=majority&appName=unifidb";
+try{
+mongoos.connect(url);
+  console.log("success connect to dbserver");
+}catch(error){
+  console.log(error.message);
 
+}
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
