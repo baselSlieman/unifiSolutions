@@ -7,53 +7,53 @@ transporters, powered by virtual magic, are here to make shipping stuff a breeze
 
 
 ## API ROUTES:
-- /api/movers
-  method: get
-  desc: get all movers documents
+- /api/movers <br />
+  method: get <br />
+  desc: get all movers documents <br />
 
-- /api/items
-  method: get
-  desc: get all items documents
+- /api/items <br />
+  method: get <br />
+  desc: get all items documents <br />
 
-- /api/addMover
-  method: Post
-  desc: add new Mover
-  requset body:
-  {
-    "weightlimit": 1900
-  }
+- /api/addMover <br />
+  method: Post <br />
+  desc: add new Mover <br />
+  requset body: <br />
+  { <br />
+    "weightlimit": 1900 <br />
+  } <br />
 
-- /api/addItem
-  method: Post
-  desc: add new Item
-  requset body:
-  {
-    "name":"item 4",
-    "weight":500
-  }
+- /api/addItem <br />
+  method: Post <br />
+  desc: add new Item <br />
+  requset body: <br />
+  { <br />
+    "name":"item 4", <br />
+    "weight":500 <br />
+  } <br />
 
-- /api/loadMover
-  method: Post
-  desc: load mover with item
-  requset body:
-  {
-    "moverId": "66980b903a0bb9eb235a77ae",
-    "itemId":  "669988d94181aec44891335c"
-  }
+- /api/loadMover <br />
+  method: Post <br />
+  desc: load mover with item <br />
+  requset body: <br />
+  { <br />
+    "moverId": "66980b903a0bb9eb235a77ae", <br />
+    "itemId":  "669988d94181aec44891335c" <br />
+  } <br />
 
-- /api/startMession/:moverId
-  method: get
-  desc: start mover mession
-  example: .../api/startMession/66980b903a0bb9eb235a77ae
+- /api/startMession/:moverId <br />
+  method: get <br />
+  desc: start mover mession <br />
+  example: .../api/startMession/66980b903a0bb9eb235a77ae <br />
 
-- /api/endMession/:moverId
-  method: get
-  desc: end mover mession
-  example: .../api/endMession/66980b903a0bb9eb235a77ae
+- /api/endMession/:moverId <br />
+  method: get <br />
+  desc: end mover mession <br />
+  example: .../api/endMession/66980b903a0bb9eb235a77ae <br />
 
-- /api/listMostComplete
-  method: get
-  desc: List who completed the most missions with a fetch endpoint (descending order).
+- /api/listMostComplete <br />
+  method: get <br />
+  desc: List who completed the most missions with a fetch endpoint (descending order). <br />
   
 ## Database:
 ### cloud database using:
